@@ -109,6 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactSubjectSelect = document.getElementById('contact-subject');
   const hiddenSubject = document.getElementById('contact-subject-hidden');
 
+  window.addEventListener('pageshow', () => {
+    if (contactForm) contactForm.reset();
+  });
+
   if (contactForm && contactSubjectSelect && hiddenSubject) {
     const syncContactSubject = () => {
       const selectedValue = contactSubjectSelect.value.trim();
