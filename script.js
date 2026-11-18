@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactLink = document.getElementById('legal-contact');
   const footer = document.getElementById('legal-footer');
   const openButtons = document.querySelectorAll('[data-chat-open]');
-  const whatsappNumber = '525626177962';
+  const whatsappNumber = '525532084409';
 
   const showWhatsApp = (messageText) => {
     if (!contactLink) return;
@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
       return 'Atendemos derecho civil, mercantil y penal, con asesoría preventiva, contenciosa y acompañamiento legal en cada etapa.';
     }
     if (question.includes('horario') || question.includes('atención') || question.includes('hora')) {
-      return 'Nuestro horario de atención es de lunes a viernes, de 9:00 a 18:00 horas. Puedes solicitar una cita por correo o teléfono.';
+      return 'Nuestro horario de atención es de lunes a sábado, de 7:00 a 20:00 horas. Puedes solicitar una cita por correo, teléfono o WhatsApp.';
     }
     if (question.includes('ubic') || question.includes('direcci') || question.includes('sede')) {
-      return 'La ubicación exacta se confirma al momento de programar la cita. Puedes escribirnos para agendar una entrevista inicial.';
+      return 'Dominium Legal atiende en Coacalco de Berriozabal, Estado de México. La dirección para la cita se confirma al agendar.';
     }
     if (question.includes('cita') || question.includes('consult') || question.includes('agendar')) {
       return 'Para solicitar una cita, puedes escribirnos desde este formulario o contactarnos directamente por WhatsApp para confirmar disponibilidad.';
@@ -133,6 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (log) {
-    addMessage('Asistente', 'Hola, soy el asistente del despacho. ¿En qué puedo ayudarte hoy?');
+    addMessage('Asistente', 'Hola, soy el asistente de Dominium Legal. ¿En qué puedo ayudarte hoy?');
   }
 });
