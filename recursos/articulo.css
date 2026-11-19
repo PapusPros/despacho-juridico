@@ -5,6 +5,8 @@
 .volver:hover{text-decoration:underline}
 .art h1{font-size:clamp(34px,5vw,56px);line-height:1.08;margin:14px 0 18px}
 .art .lead{margin:0 0 36px;color:var(--gray);font-size:19px;max-width:62ch}
+.art-cover{margin:0 0 40px;aspect-ratio:16/9;overflow:hidden;border:1px solid rgba(201,164,92,.35);background:var(--navy)}
+.art-cover img{display:block;width:100%;height:100%;object-fit:cover}
 .art h2{font-size:clamp(24px,3vw,32px);margin:42px 0 14px;padding-top:18px}
 .art ul.check{margin:0;padding:0;list-style:none}
 .art ul.check li{position:relative;padding:12px 0 12px 36px;border-top:1px solid var(--line);color:var(--ink)}
