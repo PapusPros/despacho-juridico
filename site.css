@@ -71,6 +71,22 @@ a{color:inherit}
 .presenta h2{margin:0}
 .presenta p{margin:0 0 16px;max-width:62ch;font-size:18px;color:#3d4458}
 .presenta p:first-child::first-line{color:var(--navy);font-weight:500}
+.despacho-galeria{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:48px}
+.despacho-galeria figure{margin:0;aspect-ratio:16/10;overflow:hidden;border:1px solid var(--line);background:var(--navy)}
+.despacho-galeria img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease),filter .5s}
+.despacho-galeria figure:hover img{transform:scale(1.035);filter:brightness(.92)}
+
+/* Misión, visión y valores */
+.principios{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.principio{position:relative;min-height:260px;background:var(--navy);border:1px solid rgba(201,164,92,.28);padding:38px 32px;color:#c4cadb;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.principio::after{content:"";position:absolute;left:0;top:0;width:3px;height:64px;background:var(--gold)}
+.principio:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(10,16,32,.14)}
+.principio h3{color:#fff;font-size:32px;margin-bottom:14px}
+.principio p{margin:0;color:#b9c0d2;font-size:16px}
+.principio-numero{display:block;margin-bottom:12px;color:var(--gold-l);font-size:12px;font-weight:700;letter-spacing:.16em}
+.principio ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
+.principio li{position:relative;padding-left:16px;color:#d7dbe6;font-size:15px}
+.principio li::before{content:"";position:absolute;left:0;top:.78em;width:6px;height:6px;border:1px solid var(--gold);transform:rotate(45deg)}
 
 /* Áreas */
 .areas{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:area}
@@ -206,7 +222,7 @@ a{color:inherit}
 
 /* ===== Responsive ===== */
 @media (max-width:980px){
-  .areas{grid-template-columns:1fr 1fr}
+  .areas,.principios{grid-template-columns:1fr 1fr}
 }
 @media (max-width:1100px){
   .equipo{grid-template-columns:1fr 1fr}
@@ -220,7 +236,7 @@ a{color:inherit}
   .post h3{font-size:21px}
 }
 @media (max-width:620px){
-  .areas,.equipo{grid-template-columns:1fr}
+  .areas,.equipo,.principios,.despacho-galeria{grid-template-columns:1fr}
   .logo-image{height:38px}
   .faq summary{font-size:19px;padding:18px}
   .faq details p{padding:0 18px 20px}
