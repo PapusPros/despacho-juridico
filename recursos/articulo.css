@@ -1,0 +1,15 @@
+/* Estilos extra para las páginas de artículos (usa site.css como base) */
+.art{padding-top:clamp(40px,6vw,72px)}
+.art-wrap{max-width:820px;margin:0 auto}
+.volver{display:inline-block;margin-bottom:28px;color:var(--gold-d);font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+.volver:hover{text-decoration:underline}
+.art h1{font-size:clamp(34px,5vw,56px);line-height:1.08;margin:14px 0 18px}
+.art .lead{margin:0 0 36px;color:var(--gray);font-size:19px;max-width:62ch}
+.art h2{font-size:clamp(24px,3vw,32px);margin:42px 0 14px;padding-top:18px}
+.art ul.check{margin:0;padding:0;list-style:none}
+.art ul.check li{position:relative;padding:12px 0 12px 36px;border-top:1px solid var(--line);color:var(--ink)}
+.art ul.check li:last-child{border-bottom:1px solid var(--line)}
+.art ul.check li::before{content:"";position:absolute;left:4px;top:19px;width:14px;height:14px;border:1.5px solid var(--gold-d);transform:rotate(45deg) scale(.8)}
+.art .recursos{margin-top:56px}
+.art .recursos h2{margin:0 auto 0 0;padding:0;font-size:clamp(24px,3vw,32px)}
+.art .aviso{margin:28px 0 0;color:var(--gray);font-size:13px;font-style:italic}
