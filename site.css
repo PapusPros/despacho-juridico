@@ -78,15 +78,17 @@ a{color:inherit}
 
 /* Misión, visión y valores */
 .principios{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.principio{position:relative;min-height:260px;background:var(--navy);border:1px solid rgba(201,164,92,.28);padding:38px 32px;color:#c4cadb;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
-.principio::after{content:"";position:absolute;left:0;top:0;width:3px;height:64px;background:var(--gold)}
-.principio:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(10,16,32,.14)}
-.principio h3{color:#fff;font-size:32px;margin-bottom:14px}
-.principio p{margin:0;color:#b9c0d2;font-size:16px}
-.principio-numero{display:block;margin-bottom:12px;color:var(--gold-l);font-size:12px;font-weight:700;letter-spacing:.16em}
-.principio ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
-.principio li{position:relative;padding-left:16px;color:#d7dbe6;font-size:15px}
-.principio li::before{content:"";position:absolute;left:0;top:.78em;width:6px;height:6px;border:1px solid var(--gold);transform:rotate(45deg)}
+.principio{position:relative;min-height:300px;background:var(--white);border:1px solid var(--line);border-top:4px solid var(--gold);padding:42px 34px 38px;text-align:center;box-shadow:0 14px 38px rgba(10,16,32,.06);transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s}
+.principio::before{content:"";position:absolute;left:50%;bottom:0;width:64px;height:3px;background:var(--gold);transform:translateX(-50%);transition:width .4s var(--ease)}
+.principio:hover{transform:translateY(-8px);box-shadow:0 24px 52px rgba(10,16,32,.12);border-color:rgba(201,164,92,.5)}
+.principio:hover::before{width:112px}
+.principio h3{color:var(--navy);font-size:34px;margin:18px 0 14px}
+.principio p{margin:0;color:var(--gray);font-size:16px}
+.principio-icono{display:grid;place-items:center;width:72px;height:72px;margin:0 auto;border:1px solid rgba(201,164,92,.5);border-radius:50%;background:rgba(201,164,92,.1)}
+.principio-icono svg{width:40px;height:40px;fill:none;stroke:var(--gold-d);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.principio ul{margin:18px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;text-align:left}
+.principio li{position:relative;padding:8px 8px 8px 19px;border-bottom:1px solid var(--line);color:var(--ink);font-size:14px}
+.principio li::before{content:"";position:absolute;left:2px;top:50%;width:7px;height:7px;border:1px solid var(--gold-d);transform:translateY(-50%) rotate(45deg)}
 
 /* Áreas */
 .areas{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:area}
